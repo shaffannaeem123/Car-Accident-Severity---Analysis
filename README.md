@@ -9,12 +9,12 @@ The world also suffers greatly on an economic front due to road accidents and th
 
 # Major Stakeholders
 
-1. Travelers
-2. State Health Department
-3. Emergency Services
-4. Infrastructural Development Authorities
-5. Families of the Travelers
-6. Taxpayers
+- Travelers
+- State Health Department
+- Emergency Services
+- Infrastructural Development Authorities
+- Families of the Travelers
+- Taxpayers
 
 # Problem
 
@@ -26,5 +26,5 @@ In this project, I aim to predict whether an accident that happens under a speci
 
 # Sources
 
-https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(19)30170-6/fulltext#articleInformation
+- https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(19)30170-6/fulltext#articleInformation
 
