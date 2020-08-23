@@ -1,4 +1,4 @@
-# Car Accident Severity (Capstone Project)
+# Car Accident Severity Analysis (Capstone Project)
 
 The Car Accident Severity project aims to understand the effects of various factors on the likelihood and severity of car accidents using a Machine Learning Model.
 
