@@ -22,3 +22,7 @@ There is a lack of awareness amongst travelers regarding the risks they might be
 # Goal:
 
 In this project, I aim to predict whether an accident that happens under a specific set of circumstances will be an accident limited to "property damage" or if it will include some form of "physical injury" to the driver and passengers.
+
+# Sources:
+
+https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(19)30170-6/fulltext#articleInformation
