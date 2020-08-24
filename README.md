@@ -37,6 +37,7 @@ After initial data exploration, we determined the following features to be most 
 - WEATHER: The weather conditions during the time of the collision
 - ROADCOND: The condition of the road during the collision
 - LIGHTCOND: The light conditions during the collision
+- SPEEDING: Whether or not speeding was a factor in the collision
 
 ### Target Variable
 
