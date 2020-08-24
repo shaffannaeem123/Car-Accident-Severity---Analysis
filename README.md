@@ -10,6 +10,7 @@ The world also suffers greatly on an economic front due to road accidents and th
 ## Major Stakeholders
 
 - Travelers
+- Insurance Companies
 - State Health Department
 - Emergency Services
 - Infrastructural Development Authorities
