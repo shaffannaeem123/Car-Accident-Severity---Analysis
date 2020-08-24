@@ -29,6 +29,7 @@ In this project, I aim to predict whether an accident that happens under a speci
 
 The dataset that I am using for this project is majorly provided by the government and pertains to the city of Seattle, Washington. The number of observations (194, 6773) in the data is enough to formulate a machine learning model. A large majority of the feature-set contains qualitative and categorical data, which is why performing a simple *Multiple Linear Regression* or* Polynomial Regression* is not the best option. The target variable for this model would be the level of severity of the car accident (property damage only versus physical injury).
 After initial data exploration, we determined the following features to be most relevant when predicting the *Accident Severity*.
+This is the dataset in CSV format in case you want to view it: (https://s3.us.cloud-object-storage.appdomain.cloud/cf-courses-data/CognitiveClass/DP0701EN/version-2/Data-Collisions.csv)
 
 ### Independent Variables
 
