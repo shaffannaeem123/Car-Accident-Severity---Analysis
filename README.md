@@ -26,11 +26,21 @@ There is a lack of awareness amongst travelers regarding the risks they might be
 In this project, I aim to predict whether an accident that happens under a specific set of circumstances will be an accident limited to *property damage* or if it will include some form of *physical injury* to the driver and passengers.
 
 ## Data
+
 The dataset that I am using for this project is majorly provided by the government and pertains to the city of Seattle, Washington. The number of observations (194, 6773) in the data is enough to formulate a machine learning model. A large majority of the feature-set contains qualitative and categorical data, which is why performing a simple *Multiple Linear Regression* or* Polynomial Regression* is not the best option. The target variable for this model would be the level of severity of the car accident (property damage only versus physical injury).
-After studying Pearson Correlation Coefficients and visually analyzing the data, we determined the following features to be most relevant when predicting the *Accident Severity*:
+After initial data exploration, we determined the following features to be most relevant when predicting the *Accident Severity*.
 
-- 
+### Independent Variables
 
+- INATTENTIONIND: Whether or not collision was due to inattention
+- UNDERINFL: Whether or not a driver involved was under the influence of drugs or alcohol
+- WEATHER: The weather conditions during the time of the collision
+- ROADCOND: The condition of the road during the collision
+- LIGHTCOND: The light conditions during the collision
+
+### Target Variable
+
+- SEVERITYCODE: A code that corresponds to the severity of the collision
 
 ## Sources
 
