@@ -22,7 +22,7 @@ import folium
 import webbrowser
 from folium import plugins
 from sklearn.metrics import classification_report
-
+from imblearn.over_sampling import SMOTE
 
 #Reading the Data:
 import sm as sm
