@@ -44,6 +44,16 @@ This is the dataset in CSV format in case you want to view it: (https://s3.us.cl
 
 - SEVERITYCODE: A code that corresponds to the severity of the collision
 
+## Methodology
+
+### Data Collection
+
+The dataset used for this project is a public dataset and illustrates the circumstances in which car accidents take place in Seattle, Washington.
+
+### Exploratory Data Analysis
+
+
+
 ## Sources
 
 - https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(19)30170-6/fulltext#articleInformation
