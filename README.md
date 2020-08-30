@@ -68,13 +68,20 @@ In the end, unavailable and unknown datapoints were re-disrubuted within the dat
 
 A new dataset by the name of "feature_df" was formulated after all the changes were made andd relevant predictor variables were chosen through which a machine learning model would be created.
 
-### Exploratory Data Analysis
+### Exploratory Data Analysis & Inferential Statistics
 
 As a starting point, I decided that any variable that is ~10% of the highest frequency variable that might cause an accident be included within the machine learning model and all 6 relevant variables fit this criterion. In order to check this, a bar graph was created and the frequencies were checked.
 
 ![Accident Causes](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Accident%20Causes.jpeg)
 
-Second, the numbber of accidents that were *property damage only* and the number of accidents including *physical injury* were separated and the frequencies were compared in order to check the balance of the data.
+Second, the number of accidents that were *property damage only* and the number of accidents including *physical injury* were separated and the frequencies were compared in order to check the balance of the data.
+
+![Severity](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Severity%20of%20Accidents.jpeg)
+
+### Model Selection
+
+
+
 
 
 ## Sources
