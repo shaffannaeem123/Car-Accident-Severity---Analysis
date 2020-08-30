@@ -93,7 +93,7 @@ In the end, *Decision Tree and KNN* models were shortlisted as the machine learn
 Accuracy Metric |Decision Tree | K-Nearest Neighbor |
 ------------ | ------------- | -------------
 F1-Score | Content from cell 1 | Content from cell 2
-Jaccard Similarity Score | Content in the first column | Content in the second column
+Similarity Score | Content in the first column | Content in the second column
 
 
 
