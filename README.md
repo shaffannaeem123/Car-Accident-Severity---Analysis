@@ -70,7 +70,7 @@ In the end, unavailable and unknown datapoints were re-disrubuted within the dat
 
 A new dataset by the name of "feature_df" was formulated after all the changes were made andd relevant predictor variables were chosen through which a machine learning model would be created.
 
-Before the model was created, a Python module called *SMOTE* was used to *balance* the data to remove any biases caused by having a significantly higher number of *Property Damage Only* datapoints within our *training set*. 
+Before the model was created, a Python library called *Imbalanced-Learn* was imported and *SMOTE* was used to *balance* the data to remove any biases caused by having a significantly higher number of *Property Damage Only* datapoints within our *training set*. 
 
 ### Exploratory Data Analysis & Inferential Statistics
 
