@@ -1,4 +1,4 @@
-# Car Accident Severity Analysis: Seattle, Washington (Capstone Project)
+# Car Accident Severity Analysis: Seattle, Washington (IBM Capstone Project)
 
 The Car Accident Severity project aims to understand the effects of various factors on the likelihood and severity of car accidents using a Machine Learning Model.
 
@@ -23,13 +23,15 @@ There is a lack of awareness amongst travelers regarding the risks they might be
 
 ## Goal
 
-In this project, I aim to predict whether an accident that happens under a specific set of circumstances will be an accident limited to *property damage* or if it will include some form of *physical injury* to the driver and passengers.
+This project aims to predict whether an accident that happens under a specific set of circumstances will be an accident limited to *property damage* or if it will include some form of *physical injury* to the driver and/or the passengers.
 
 ## Data
 
-The dataset that I am using for this project is majorly provided by the government and pertains to the city of Seattle, Washington. It is recent data and includes observations from 2004 to 2020. The number of observations (194, 6773) in the data is enough to formulate a machine learning model. A large majority of the feature-set contains qualitative and categorical data, which is why performing a simple *Multiple Linear Regression* or* Polynomial Regression* is not the best option. The target variable for this model would be the level of severity of the car accident (property damage only versus physical injury).
+The dataset that being used for this project is majorly provided by the government and pertains to the city of Seattle, Washington. It includes observations from 2004 to 2020. The number of observations in the data are enough to formulate a machine learning model. A large majority of the feature-set contains qualitative and categorical data, which is why performing a simple *Multiple Linear Regression* or* Polynomial Regression* is not the good option. The target variable for this model is the *level of severity* of the car accident (property damage only versus physical injury).
+
+This is the dataset in CSV format in case it needs to be viewed: (https://s3.us.cloud-object-storage.appdomain.cloud/cf-courses-data/CognitiveClass/DP0701EN/version-2/Data-Collisions.csv)
+
 After initial data exploration, we determined the following features to be most relevant when predicting the *Accident Severity*.
-This is the dataset in CSV format in case you want to view it: (https://s3.us.cloud-object-storage.appdomain.cloud/cf-courses-data/CognitiveClass/DP0701EN/version-2/Data-Collisions.csv)
 
 ### Independent Variables
 
@@ -48,29 +50,31 @@ This is the dataset in CSV format in case you want to view it: (https://s3.us.cl
 
 ### Data Collection
 
-The dataset used for this project is a public dataset and illustrates the circumstances in which car accidents take place in Seattle, Washington from 2004 to 2020.
+The dataset used for this project is a public dataset and illustrates the circumstances in which car accidents take place in Seattle, Washington, from 2004 to 2020.
 
 ### Data Cleaning
 
-After gaining an understanding of the problem, I moved on to understanding the data that I had to figure out how to transform it to its most meaningful form. The first thing I did was check the data types of each variable and then I explored how many variables were missing some values.
+After gaining an understanding of the problem, the data had to be transformed to a form on which a machine learning model could be implemented. The first thing that was done was to check the data types of each variable and then explore how many variables were missing some entries.
 
-The data types in the Seattle dataset mostly comprised *categorical variables* and *objects*; I instantly concluded that a Simple/Multiple/Polynomial Regression would not work here. I held that thought and confirmed it later. The variables were noted down in plain english and most of them were to be encoded with integers in an *ordinal* manner. The data types of the original dataset can be viewed below:
+The data types in the Seattle dataset mostly comprised *categorical variables* and *objects*; it was concluded that a Simple/Multiple/Polynomial Regression would not work here. The variables in the dataset were listed in plain english and most of them were to be encoded with integers in an *ordinal* manner. The data types of the original dataset can be viewed below:
 
 ![Data Types](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Data%20Types.JPG)
 
-The frequency of meaningful data points within each variable column can be seen below:
+The frequency of meaningful data points within each variable column can be viewed below:
 
 ![Data Exploration](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Variable%20Frequency.jpeg)
 
-After these analyses, it was concluded that some of the data will be dropped based on *materiality*, and the other will be encoded with integers. The *unknown* valuables were to be distributed back to the dataset in the same proportion the rest of the data was distributed.
+After these analyses, it was concluded that some of the data will be dropped based on *materiality*, and the other will be encoded with integers. The *unknown* valuables were to be distributed back to the dataset in the same proportion the rest of the data was distributed, minus the *unknown* values.
 
-In the end, unavailable and unknown datapoints were re-disrubuted within the dataset in the same proprtions as the known values in order to minimize the loss of data. Data that could not be salvaged was dropped, and the variables were encoded in integer forms; for example 0, 1, 2 and one unique identifier was retained for the dataset.
+In the end, unavailable and unknown datapoints were re-disrubuted within the dataset in the same proprtions as the known values in order to minimize the loss of data. Data that could not be salvaged was dropped, and the variables were encoded in integer forms; for example 0, 1, 2, and one unique identifier was retained for the dataset.
 
 A new dataset by the name of "feature_df" was formulated after all the changes were made andd relevant predictor variables were chosen through which a machine learning model would be created.
 
+Before the model was created, a Python module called *SMOTE* was used to *balance* the data to remove any biases caused by having a significantly higher number of *Property Damage Only* datapoints within our *training set*. 
+
 ### Exploratory Data Analysis & Inferential Statistics
 
-As a starting point, I decided that any variable that is ~10% of the highest frequency variable that might cause an accident be included within the machine learning model and all 6 relevant variables fit this criterion. In order to check this, a bar graph was created and the frequencies were checked.
+As a starting point, it was decided that any variable that is ~10% of the highest frequency variable that might cause an accident be included within the machine learning model and all 6 relevant variables fit this criterion. In order to check this, a bar graph was created and the frequencies were checked.
 
 ![Accident Causes](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Accident%20Causes.jpeg)
 
@@ -82,18 +86,29 @@ Second, the number of accidents that were *property damage only* and the number 
 
 Subsequent to gaining a complete understanding of the dataset, it was evident that there were no *continuous* variables and hence, a classification model was to be used instead of a *regression model*. There were four options that could have been implemented - *Decision Tree, K-Nearest Neighbor, Logistic Regression, and Support Vector Machine.*
 
-Because SVM's training complexity is largely reliant on the size of the dataset and is not the best fit for larger datasets, it was not suitable to use it in this specific case. Logistic Regression was foregone because more complex, penalizing variations of the model had to be implemented in order to make a prediction.
+Because SVM's training complexity is largely reliant on the size of the dataset and is not well suited to larger datasets, it was not used in this specific case.
 
-In the end, *Decision Tree and KNN* models were shortlisted as the machine learning classification algroithms that were to be used.
+In the end, *Decision Tree, Logistic Regression, and KNN* models were shortlisted as the machine learning classification algroithms that were to be tested.
 
 ## Results
 
+The results of each of the three models varied; one excelled at predicting the *positives* accurately while the other predicted the *negativves* better. It was evident by the results that the predictions could have been improved if there was a more complete dataset at hand.
 
+### K-Nearest Neighbor
 
-Accuracy Metric |Decision Tree | K-Nearest Neighbor |
------------- | ------------- | -------------
-F1-Score | Content from cell 1 | Content from cell 2
-Similarity Score | Content in the first column | Content in the second column
+![K-Nearest Neighbor best K](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/K-Nearest%20Neighbor%20(KNN)%20best%20K%20Value.jpeg)
+
+![K-Nearest Neighbor](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/KNN%20Classification%20Metrics%20Report.JPG)
+
+### Decision Tree
+
+![Decision Tree](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Decision%20Tree%20Classification%20Metrics%20Report.JPG)
+
+### Logistic Regression
+
+![Logistic Regression](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Logistic%20Regression%20Classification%20Metrics%20Report.JPG)
+
+![Logistic Regression Log Loss](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Logistic%20Regression%20(Log%20Loss).JPG)
 
 
 
