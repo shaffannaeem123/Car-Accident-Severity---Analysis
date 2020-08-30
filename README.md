@@ -52,9 +52,9 @@ The dataset used for this project is a public dataset and illustrates the circum
 
 ### Data Cleaning
 
-After gaining an understanding of the problem, I moved on to understanding the data that I had to figure out how to transform it to its most meaningful form. The first thing I did was check the data-types of each variable and then I explored how many variables were missing some values.
+After gaining an understanding of the problem, I moved on to understanding the data that I had to figure out how to transform it to its most meaningful form. The first thing I did was check the data types of each variable and then I explored how many variables were missing some values.
 
-The data types in the Seattle dataset comprised categorical variables and objects; I instantly concluded that a Simple/Multiple/Polynomial Regression would not work here. I held that thought and confirmed it later. The variables were noted down in plain english and most of them were to be encoded with integers in an ordinal manner. The data tyypes of the original dataset can be viewed below:
+The data types in the Seattle dataset mostly comprised *categorical variables* and *objects*; I instantly concluded that a Simple/Multiple/Polynomial Regression would not work here. I held that thought and confirmed it later. The variables were noted down in plain english and most of them were to be encoded with integers in an *ordinal* manner. The data types of the original dataset can be viewed below:
 
 ![Data Types](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Data%20Types.JPG)
 
@@ -62,7 +62,7 @@ The frequency of meaningful data points within each variable column can be seen 
 
 ![Data Exploration](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Variable%20Frequency.jpeg)
 
-After these analyses, it was concluded that some of the data will be dropped based on materiality, and the other will be encoded with integers. The "unknown" valuables were to be distributed back to the dataset in the same proportion the rest of the data was distributed.
+After these analyses, it was concluded that some of the data will be dropped based on *materiality*, and the other will be encoded with integers. The *unknown* valuables were to be distributed back to the dataset in the same proportion the rest of the data was distributed.
 
 In the end, unavailable and unknown datapoints were re-disrubuted within the dataset in the same proprtions as the known values in order to minimize the loss of data. Data that could not be salvaged was dropped, and the variables were encoded in integer forms; for example 0, 1, 2 and one unique identifier was retained for the dataset.
 
@@ -73,6 +73,8 @@ A new dataset by the name of "feature_df" was formulated after all the changes w
 As a starting point, I decided that any variable that is ~10% of the highest frequency variable that might cause an accident be included within the machine learning model and all 6 relevant variables fit this criterion. In order to check this, a bar graph was created and the frequencies were checked.
 
 ![Accident Causes](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Accident%20Causes.jpeg)
+
+Second, the numbber of accidents that were *property damage only* and the number of accidents including *physical injury* were separated and the frequencies were compared in order to check the balance of the data.
 
 
 ## Sources
