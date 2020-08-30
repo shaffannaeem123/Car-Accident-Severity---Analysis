@@ -52,6 +52,8 @@ The dataset used for this project is a public dataset and illustrates the circum
 
 ### Exploratory Data Analysis
 
+https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Variable%20Frequency.jpeg
+
 
 
 ## Sources
