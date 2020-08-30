@@ -60,7 +60,7 @@ The data types in the Seattle dataset mostly comprised *categorical variables* a
 
 ![Data Types](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Data%20Types.JPG)
 
-The frequency of meaningful data points within each variable column can be viewed below:
+The frequency of datapoints that contained entries that could be readily understood, for example, *Y* for *Yes*, *N* for *No*, or *0* for *False* and *1* for *True*, was higher for some variables than the others. The frequncies within the columns before the data was transformed are displayed underneath:
 
 ![Data Exploration](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Variable%20Frequency.jpeg)
 
