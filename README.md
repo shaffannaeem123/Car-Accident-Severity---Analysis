@@ -112,7 +112,7 @@ The accuracy metrics for the Decision Tree model are presented below:
 
 ### Logistic Regression
 
-The Logistic Regression model tends to falter with larger datasets containing large minority datapoints unless a more complex, penalty-oriented model is used. Surprisngly, it was also able to make fair predictions relative to the other two models:
+The Logistic Regression model tends to falter with larger datasets containing a high frequency of minority datapoints unless a more complex, penalty-oriented model is used. Surprisngly, it was also able to make fair predictions relative to the other two models:
 
 ![Logistic Regression](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Logistic%20Regression%20Classification%20Metrics%20Report.JPG)
 
