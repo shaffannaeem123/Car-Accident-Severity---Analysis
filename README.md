@@ -58,7 +58,7 @@ The data types in the Seattle dataset comprised categorical variables and object
 
 ![Data Types](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Data%20Types.JPG)
 
-The number of variables with meaningful information in the initial dataset can be seen below:
+The frequency of meaningful data points within each variable column can be seen below:
 
 ![Data Exploration](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Variable%20Frequency.jpeg)
 
@@ -70,6 +70,9 @@ A new dataset by the name of "feature_df" was formulated after all the changes w
 
 ### Exploratory Data Analysis
 
+As a starting point, I decided that any variable that is ~10% of the highest frequency variable that might cause an accident be included within the machine learning model and all 6 relevant variables fit this criterion. In order to check this, a bar graph was created and the frequencies were checked.
+
+![Accident Causes](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Accident%20Causes.jpeg)
 
 
 ## Sources
