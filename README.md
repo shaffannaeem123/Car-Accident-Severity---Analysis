@@ -56,11 +56,15 @@ The dataset used for this project is a public dataset and illustrates the circum
 
 After gaining an understanding of the problem, the data had to be transformed to a form on which a machine learning model could be implemented. The first thing that was done was to check the data types of each variable and then explore how many variables were missing some entries.
 
-The data types in the Seattle dataset mostly comprised *categorical variables* and *objects*; it was concluded that a Simple/Multiple/Polynomial Regression would not work here. The variables in the dataset were listed in plain english and most of them were to be encoded with integers in an *ordinal* manner. The data types of the original dataset can be viewed below:
+The data types in the Seattle dataset mostly comprised *categorical variables* and *objects*; it was concluded that a Simple/Multiple/Polynomial Regression would not work here. The variables in the dataset were listed in plain english and most of them were to be encoded with integers in an *ordinal* manner. 
+
+#### Data-types in the Dataset
 
 ![Data Types](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Data%20Types.JPG)
 
-The frequency of datapoints that contained entries that could be readily understood, for example, *Y* for *Yes*, *N* for *No*, or *0* for *False* and *1* for *True*, was higher for some variables than the others. The frequncies within the columns before the data was transformed are displayed underneath:
+The frequency of datapoints that contained entries that could be readily understood, for example, *Y* for *Yes*, *N* for *No*, or *0* for *False* and *1* for *True*, was higher for some variables than the others. 
+
+#### Frequncies in Dataset Columns before the Data was Transformed
 
 ![Data Exploration](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Variable%20Frequency.jpeg)
 
@@ -74,6 +78,8 @@ Next, the data was split into a *training set* and a *testing set* in order to t
 
 Most importantly, the number of accidents that were *property damage only* and the number of accidents including *physical injury* were compared in order to check the balance of the data so that biases could be minimized.
 
+#### Balanced or Unbalanced?
+
 ![Severity](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Severity%20of%20Accidents.jpeg)
 
 After recognizing that the dataset was clearly imbalanced, a Python library called *Imbalanced-Learn* was imported and *SMOTE* was used to *balance* the data to reduce the possibility of inaccurate predictions caused by having a significantly higher number of *Property Damage Only* datapoints within our *training set*. If this step was omitted, the model would have predicted a lot more *0s* or *Property Damage Onlys* than it should have.
@@ -81,6 +87,8 @@ After recognizing that the dataset was clearly imbalanced, a Python library call
 ### Exploratory Data Analysis & Inferential Statistics
 
 As a starting point, it was decided that any variable that is ~10% of the highest frequency variable that might cause an accident be included within the machine learning model and all 6 relevant variables fit this criterion. In order to check this, a bar graph was created and the frequencies were checked.
+
+#### The Predictor Variables
 
 ![Accident Causes](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Accident%20Causes.jpeg)
 
