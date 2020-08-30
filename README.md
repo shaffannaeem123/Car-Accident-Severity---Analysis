@@ -50,17 +50,26 @@ This is the dataset in CSV format in case you want to view it: (https://s3.us.cl
 
 The dataset used for this project is a public dataset and illustrates the circumstances in which car accidents take place in Seattle, Washington from 2004 to 2020.
 
-### Exploratory Data Analysis
+### Data Cleaning
 
-After gaining an understanding of the problem, I moved on to understanding the data that I had. The first thing I did was check the data-types of each variable and then I explored how many variables were missing some values.
+After gaining an understanding of the problem, I moved on to understanding the data that I had to figure out how to transform it to its most meaningful form. The first thing I did was check the data-types of each variable and then I explored how many variables were missing some values.
 
-The data types in the Seattle dataset comprised categorical variables and objects; I instantly concluded that a Simple/Multiple/Polynomial Regression would not work here. I held that thought and confirmed. The variables were noted down in plain english and most of them were to be encoded with integers in an ordinal manner.
+The data types in the Seattle dataset comprised categorical variables and objects; I instantly concluded that a Simple/Multiple/Polynomial Regression would not work here. I held that thought and confirmed it later. The variables were noted down in plain english and most of them were to be encoded with integers in an ordinal manner. The data tyypes of the original dataset can be viewed below:
 
 ![Data Types](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Data%20Types.JPG)
 
+The number of variables with meaningful information in the initial dataset can be seen below:
+
 ![Data Exploration](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Variable%20Frequency.jpeg)
 
-After this analysis, it was concluded that 
+After these analyses, it was concluded that some of the data will be dropped based on materiality, and the other will be encoded with integers. The "unknown" valuables were to be distributed back to the dataset in the same proportion the rest of the data was distributed.
+
+In the end, unavailable and unknown datapoints were re-disrubuted within the dataset in the same proprtions as the known values in order to minimize the loss of data. Data that could not be salvaged was dropped, and the variables were encoded in integer forms; for example 0, 1, 2 and one unique identifier was retained for the dataset.
+
+A new dataset by the name of "feature_df" was formulated after all the changes were made andd relevant predictor variables were chosen through which a machine learning model would be created.
+
+### Exploratory Data Analysis
+
 
 
 ## Sources
