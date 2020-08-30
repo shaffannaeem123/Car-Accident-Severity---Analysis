@@ -1,4 +1,4 @@
-# Car Accident Severity Analysis (Capstone Project)
+# Car Accident Severity Analysis: Seattle, Washington (Capstone Project)
 
 The Car Accident Severity project aims to understand the effects of various factors on the likelihood and severity of car accidents using a Machine Learning Model.
 
@@ -54,7 +54,9 @@ The dataset used for this project is a public dataset and illustrates the circum
 
 After gaining an understanding of the problem, I moved on to understanding the data that I had. The first thing I did was check the data-types of each variable and then I explored how many variables were missing some values.
 
-The data types in the Seattle dataset comprised categorical variables and objects; I instantly concluded that a Simple/Multiple/Polynomial Regression would not work here. I held that thought and confirmed. The variables were noted down in plain english and most of them were to be encoded with integers
+The data types in the Seattle dataset comprised categorical variables and objects; I instantly concluded that a Simple/Multiple/Polynomial Regression would not work here. I held that thought and confirmed. The variables were noted down in plain english and most of them were to be encoded with integers in an ordinal manner.
+
+![Data Types](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Data%20Types.JPG)
 
 ![Data Exploration](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Variable%20Frequency.jpeg)
 
