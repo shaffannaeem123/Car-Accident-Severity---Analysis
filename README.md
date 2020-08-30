@@ -102,27 +102,31 @@ The results of each of the three models varied; one excelled at predicting the *
 
 Before creating the KNN model, a loop was ran from range 1 to 10 where the accuracy of the model was checked with varying values of K, and *K = 4* was chosen as it produced the highest accuracy. The result can be seen below:
 
-#### KNN Classification Metrics Report
+#### Choosing the right *K*
 
 ![K-Nearest Neighbor best K](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/K-Nearest%20Neighbor%20(KNN)%20best%20K%20Value.jpeg)
 
-After running the model, a classification metrics report was generated and it can be viewed below:
+#### KNN Classification Metrics Report
 
 ![K-Nearest Neighbor](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/KNN%20Classification%20Metrics%20Report.JPG)
 
 ### Decision Tree
 
-The accuracy metrics for the Decision Tree model are presented below:
+#### Decision Tree Classification Metrics Report
 
 ![Decision Tree](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Decision%20Tree%20Classification%20Metrics%20Report.JPG)
 
 ### Logistic Regression
 
-The Logistic Regression model tends to falter with larger datasets containing a high frequency of minority datapoints unless a more complex, penalty-oriented model is used. Surprisngly, it was also able to make fair predictions relative to the other two models:
+The Logistic Regression model tends to falter with larger datasets containing a high frequency of minority datapoints unless a more complex, penalty-oriented model is used. Surprisngly, it was also able to make fair predictions relative to the other two models.
+
+#### Logistic Regression Classification Metrics Report
 
 ![Logistic Regression](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Logistic%20Regression%20Classification%20Metrics%20Report.JPG)
 
-It was noticed that the logistic regression model produced a higher-than-desried *uncertainty* which is illustrated by its *log loss*:
+It was noticed that the logistic regression model produced a higher-than-desried *uncertainty* which is illustrated by its *log loss*.
+
+#### Log Loss
 
 ![Logistic Regression Log Loss](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Logistic%20Regression%20(Log%20Loss).JPG)
 
