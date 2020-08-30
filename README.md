@@ -80,7 +80,13 @@ Second, the number of accidents that were *property damage only* and the number 
 
 ### Model Selection
 
+Subsequent to gaining a complete understanding of the dataset, it was evident that there were no *continuous* variables and hence, a classification model was to be used instead of a *regression model*. There were four options that could have been implemented - *Decision Tree, K-Nearest Neighbor, Logistic Regression, and Support Vector Machine.*
 
+Because SVM's training complexity is largely reliant on the size of the dataset and is not the best fit for larger datasets, it was not suitable to use it in this specific case. Logistic Regression was foregone because more complex, penalizing variations of the model had to be implemented in order to make a prediction.
+
+In the end, *Decision Tree and KNN* models were shortlisted as the machine learning classification algroithms that were to be used.
+
+## Results
 
 
 
