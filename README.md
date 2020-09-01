@@ -135,6 +135,18 @@ It was noticed that the logistic regression model produced a higher-than-desried
 
 ## Discussion
 
+The results of all three machine learning models that were used varied significantly. One excelled at predicting the occurences of *0* while the other would predict *0* and *1* with ~50-50 accuracies.
+
+#### Comparison of Accuracy Metrics across the Models
+
+![Comparison of Accuracy Metrics](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Comparison%20of%20Accuracy%20Metrics.PNG)
+
+In order to understand what the report above means, it is necessary to take a look at what precision and recall signify.
+
+#### Precision VS Recall
+
+![Precision VS Recall](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Precision%20VS%20Recall.png)
+
 
 
 ## Conclusion
@@ -143,4 +155,5 @@ It was noticed that the logistic regression model produced a higher-than-desried
 ## Sources
 
 - https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(19)30170-6/fulltext#articleInformation
+- By Walber - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=36926283
 
