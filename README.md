@@ -189,7 +189,7 @@ It is evident by the models' accuracy ratings that there is still room for impro
 - Ensure that there are enough emergency responders in the areas where accidents happen the most. Also decrease the *lead times* of the responses in order to save more lives and keep law and order in check.
 - Make sure there are hospitals near to accident hotspots in case of crashes including *severe physical injury*.
 - There should be increased investment in *accident hotspot areas* and road & lighting conditions should be improved. Installation of a greater number of caution & safety signs should also be considered.
-- In order to avoid accidents at intersections, better traffic management systems could be implemented.
+- Better traffic management systems can be implemented in order to avoid accidents at *intersections*.
 
 ## Sources
 
