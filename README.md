@@ -37,7 +37,7 @@ After initial data exploration, we determined the following features to be most 
 
 ![Predictor Variables](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Selected%20Feature%20Variables.PNG)
 
-### Target Variable
+### Selected Target Variable
 
 - SEVERITYCODE: A code that corresponds to the severity of the collision
 
