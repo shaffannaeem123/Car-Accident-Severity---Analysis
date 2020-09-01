@@ -169,8 +169,6 @@ It is evident by the models' accuracy ratings that there is still room for impro
 
 ![Folium I-5](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/I-5%20Highway%20Seattle.JPG)
 
-![Folium Center](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Seattle%20Center.JPG)
-
 #### For Travelers & their Families
 
 - Most accidents include adverse weather, road, and lighting conditions. The driver should make sure that they have a backup plan for tackling adverse weather conditions, e.g. a place to stay on their way if the weather forecast is not favorable. If possible, reschedule the day on which you travel. It is also advisable to travel during daytime in order to avoid accidents caused by hampered visibility.
@@ -182,11 +180,16 @@ It is evident by the models' accuracy ratings that there is still room for impro
 - Check to see whether the client that is being insured travels on the I-5 highway regularly. Also check how frequently they travel to/within Central Seattle.
 - Check the weather, lighting and road conditions of where the client frequently travels to and where they live.
 
+#### Blocks & Intersections account for ~100% of Car Accidents in Seattle: is better traffic control needed?
+
+![BlockVSAlleyVSIntersection](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Area%20of%20Accident%20(Block%2BIntersection%2BAlley).jpeg)
+
 #### For the Government
 
 - Ensure that there are enough emergency responders in the areas where accidents happen the most. Also decrease the *lead times* of the responses in order to save more lives and keep law and order in check.
 - Make sure there are hospitals near to accident hotspots in case of crashes including *severe physical injury*.
 - There should be increased investment in *accident hotspot areas* and road & lighting conditions should be improved. Installation of a greater number of caution & safety signs should also be considered.
+- In order to avoid accidents at intersections, better traffic management systems could be implemented.
 
 ## Sources
 
