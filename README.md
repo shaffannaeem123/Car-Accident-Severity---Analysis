@@ -31,16 +31,11 @@ The dataset that being used for this project is majorly provided by the governme
 
 This is the dataset in CSV format in case it needs to be viewed: (https://s3.us.cloud-object-storage.appdomain.cloud/cf-courses-data/CognitiveClass/DP0701EN/version-2/Data-Collisions.csv)
 
-After initial data exploration, we determined the following features to be most relevant when predicting the *Accident Severity*.
+After initial data exploration, we determined the following features to be most relevant when predicting *Accident Severity*.
 
-### Independent Variables
+### Selected Independent/Predictor Variables
 
-- INATTENTIONIND: Whether or not collision was due to inattention
-- UNDERINFL: Whether or not a driver involved was under the influence of drugs or alcohol
-- WEATHER: The weather conditions during the time of the collision
-- ROADCOND: The condition of the road during the collision
-- LIGHTCOND: The light conditions during the collision
-- SPEEDING: Whether or not speeding was a factor in the collision
+![Predictor Variables](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Selected%20Feature%20Variables.PNG)
 
 ### Target Variable
 
