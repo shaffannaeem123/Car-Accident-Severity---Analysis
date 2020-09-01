@@ -156,12 +156,37 @@ Now that we have understood the different accuracy metrics used in the project, 
 #### Comparing the Results
 
 - **KNN:** This model has the highest *weighted average F1 Score*. It is highly accurate while predicting *negatives* but performs poorly when it has to predict the *positives*.
-- **Decision Tree:** This algorithm is the most balanced. Like *KNN*, it also predicts the *0s* with a higher degree of accuracy, but it can also predict the *1s* with a greater accuracy than the KNN implementation.
+- **Decision Tree:** This algorithm predicts in a more balanced manner than KNN. Like *KNN*, it also predicts the *0s* with a higher degree of accuracy, but it can also predict the *1s* with a greater accuracy than the KNN implementation.
 - **Logistic Regression:** This machine learning classifier has the lowest *weighted average F1 score* at *0.44* but it has the most balanced prediction. It classifies both *0s* and *1s* similarly and has the same *F1 score* for both. 
 
 ## Conclusion
 
+It is evident by the models' accuracy ratings that there is still room for improvement. I believe that better models could have been made if the data at hand was more comprehensive and had less *unknown* and *missing values*. The analyses done could also have held more value if greater *target variable* class-data was available and was not limited to *property damage only* and *physical injury*. That way, whether an accident would happen in the first place could have been better predicted. It would also have possibly meant that the algroithms implemented would have given more accurate predictions as the correlations between *predictor* and *predicted* variable could have been stronger.
 
+## Recommendations
+
+#### The I-5 highway and Central Seattle: the *Danger Zones*?
+
+![Folium I-5](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/I-5%20Highway%20Seattle.JPG)
+
+![Folium Center](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Seattle%20Center.JPG)
+
+#### For Travelers & their Families
+
+- Most accidents include adverse weather, road, and lighting conditions. The driver should make sure that they have a backup plan for tackling adverse weather conditions, e.g. a place to stay on their way if the weather forecast is not favorable. If possible, reschedule the day on which you travel. It is also advisable to travel during daytime in order to avoid accidents caused by hampered visibility.
+- Inattentive driving, over-speeding, and being under-the-influence are also contributors to the likelihood of an accident occuring and closely rival the above-mentioned factors. Make sure that the driver is well-rested, follows the speed-limit, and is not under-the-influence while traveling.
+- Drive carefully in central Seattle and the I-5 highway as that is where the most accidents happen.
+
+#### For Insurance Companies
+
+- Check to see whether the client that is being insured travels on the I-5 highway regularly. Also check how frequently they travel to/within Central Seattle.
+- Check the weather, lighting and road conditions of where the client frequently travels to and where they live.
+
+#### For the Government
+
+- Ensure that there are enough emergency responders in the areas where accidents happen the most. Also decrease the *lead times* of the responses in order to save more lives and keep law and order in check.
+- Make sure there are hospitals near to accident hotspots in case of crashes including *severe physical injury*.
+- There should be increased investment in *accident hotspot areas* and road & lighting conditions should be improved. Installation of a greater number of caution & safety signs should also be considered.
 
 ## Sources
 
