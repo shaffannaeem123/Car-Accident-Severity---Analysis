@@ -35,7 +35,7 @@ After initial data exploration, we determined the following features to be most 
 
 ### Selected Independent/Predictor Variables
 
-<img align="left" width="100" height="100"> ![Predictor Variables](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Selected%20Feature%20Variables.PNG)
+![Predictor Variables](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Selected%20Feature%20Variables.PNG)
 
 ### Selected Target Variable
 
