@@ -35,7 +35,7 @@ After initial data exploration, we determined the following features to be most 
 
 ### Selected Independent/Predictor Variables
 
-![Predictor Variables](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Selected%20Feature%20Variables.PNG)
+<img align="center" width="900" height="400" src ="https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Selected%20Feature%20Variables.PNG">
 
 ### Selected Target Variable
 
@@ -85,7 +85,7 @@ As a starting point, it was decided that any variable that is ~10% of the highes
 
 #### The Predictor Variables
 
-<img align="center" width="900" height="300" src = "https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Accident%20Causes.jpeg">
+![Predictor Variables](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Accident%20Causes.jpeg)
 
 Because the data was in a *cleaner* state now, it was easy to re-confirm that the *predictor variables* we had chosen by intuition were relevant whilst making the prediction and this was confirmed by the above visualization - most accidents had adverse conditions with respect to all the chosen variables.
 
