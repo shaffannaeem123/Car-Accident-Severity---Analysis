@@ -175,11 +175,6 @@ It is evident by the models' accuracy ratings that there is still room for impro
 - Inattentive driving, over-speeding, and being under-the-influence are also contributors to the likelihood of an accident occuring and closely rival the above-mentioned factors. Make sure that the driver is well-rested, follows the speed-limit, and is not under-the-influence while traveling.
 - Drive carefully in central Seattle and the I-5 highway as that is where the most accidents happen.
 
-#### For Insurance Companies
-
-- Check to see whether the client that is being insured travels on the I-5 highway regularly. Also check how frequently they travel to/within Central Seattle.
-- Check the weather, lighting and road conditions of where the client frequently travels to and where they live.
-
 #### Blocks & Intersections account for ~100% of Car Accidents in Seattle: is better traffic control needed?
 
 ![BlockVSAlleyVSIntersection](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Area%20of%20Accident%20(Block%2BIntersection%2BAlley).jpeg)
@@ -190,6 +185,11 @@ It is evident by the models' accuracy ratings that there is still room for impro
 - Make sure there are hospitals near to accident hotspots in case of crashes including *severe physical injury*.
 - There should be increased investment in *accident hotspot areas* and road & lighting conditions should be improved. Installation of a greater number of caution & safety signs should also be considered.
 - Better traffic management systems can be implemented in order to avoid accidents at *intersections*.
+
+#### For Insurance Companies
+
+- Check to see whether the client that is being insured travels on the I-5 highway regularly. Also check how frequently they travel to/within Central Seattle.
+- Check the weather, lighting and road conditions of where the client frequently travels to and where they live.
 
 ## Sources
 
