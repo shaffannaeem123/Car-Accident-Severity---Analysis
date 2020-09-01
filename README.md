@@ -139,7 +139,7 @@ The results of all three machine learning models that were used varied significa
 
 #### Comparison of Accuracy Metrics across the Models
 
-<img align="center" width="900" height="300" src = "https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Comparison%20of%20Accuracy%20Metrics.PNG">
+<img align="center" width="950" height="340" src = "https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Comparison%20of%20Accuracy%20Metrics.PNG">
 
 In order to understand what the report above means, it is necessary to take a look at what precision and recall signify.
 
