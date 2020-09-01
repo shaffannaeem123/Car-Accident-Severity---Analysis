@@ -145,7 +145,7 @@ In order to understand what the report above means, it is necessary to take a lo
 
 #### Precision VS Recall
 
-<img align="center" width="600" height="1000" src="https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Precision%20VS%20Recall.png">
+<img align="center" width="600" height="900" src="https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Precision%20VS%20Recall.png">
 
 
 
