@@ -153,6 +153,8 @@ In order to understand what the report above means, it is necessary to take a lo
 
 Now that we have understood the different accuracy metrics used in the project, we can discuss what the varying results mean.
 
+#### Comparing the Results
+
 - **KNN:** This model has the highest *weighted average F1 Score*. It is highly accurate while predicting *negatives* but performs poorly when it has to predict the *positives*.
 - **Decision Tree:** This algorithm is the most balanced. Like *KNN*, it also predicts the *0s* with a higher degree of accuracy, but it can also predict the *1s* with a greater accuracy than the KNN implementation.
 - **Logistic Regression:** This machine learning classifier has the lowest *weighted average F1 score* at *0.44* but it has the most balanced prediction. It classifies both *0s* and *1s* similarly and has the same *F1 score* for both. 
