@@ -131,7 +131,7 @@ It was noticed that the logistic regression model produced a higher-than-desried
 
 #### Log Loss
 
-![Logistic Regression Log Loss](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Logistic%20Regression%20(Log%20Loss).JPG)
+The value of *log-loss* is **0.69** for this model.
 
 ## Discussion
 
