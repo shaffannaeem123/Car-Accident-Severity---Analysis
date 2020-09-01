@@ -39,7 +39,7 @@ After initial data exploration, we determined the following features to be most 
 
 ### Selected Target Variable
 
-- SEVERITYCODE: A code that corresponds to the severity of the collision
+- **SEVERITYCODE**: A code that corresponds to the severity of the collision
 
 ## Methodology
 
