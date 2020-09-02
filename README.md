@@ -35,7 +35,7 @@ After initial data exploration, we determined the following features to be most 
 
 ### Selected Independent/Predictor Variables
 
-<img align="center" width="950" height="340" src ="https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Selected%20Feature%20Variables.PNG">
+<img align="center" width="950" height="340" src ="https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/Selected%20Feature%20Variables.PNG">
 
 ### Selected Target Variable
 
@@ -55,13 +55,13 @@ The data types in the Seattle dataset mostly comprised *categorical variables* a
 
 #### Data-types in the Dataset
 
-![Data Types](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Data%20Types.JPG)
+![Data Types](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/Data%20Types.JPG)
 
 The frequency of data points that contained entries that could be readily understood, for example, *Y* for *Yes*, *N* for *No*, or *0* for *False* and *1* for *True*, was higher for some variables than the others. 
 
 #### Frequencies in Dataset Columns before the Data was Transformed
 
-![Data Exploration](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Variable%20Frequency.jpeg)
+![Data Exploration](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/Variable%20Frequency.jpeg)
 
 After these analyses, it was concluded that some of the data will be dropped based on *materiality (will the dropped values significantly affect the analysis?)*, and the other will be encoded with integers. The *unknown* valuables were to be distributed back to the dataset in the same proportion the rest of the data was distributed, minus the *unknown* values.
 
@@ -75,7 +75,7 @@ Most importantly, the number of accidents that were *property damage only* and t
 
 #### Balanced or Unbalanced?
 
-![Severity](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Severity%20of%20Accidents.jpeg)
+![Severity](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/Severity%20of%20Accidents.jpeg)
 
 After recognizing that the dataset was clearly imbalanced, a Python library called *Imbalanced-Learn* was imported and *SMOTE* was used to *balance* the data to reduce the possibility of inaccurate predictions caused by having a significantly higher number of *Property Damage Only* data points within our *training set*. If this step was omitted, the model would have predicted a lot more *0s* or *Property Damage Onlys* than it should have.
 
@@ -85,7 +85,7 @@ As a starting point, it was decided that any variable that is ~10% of the highes
 
 #### The Predictor Variables
 
-![Predictor Variables](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Accident%20Causes.jpeg)
+![Predictor Variables](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/Accident%20Causes.jpeg)
 
 Because the data was in a *cleaner* state now, it was easy to re-confirm that the *predictor variables* we had chosen by intuition were relevant whilst making the prediction and this was confirmed by the above visualization - most accidents had adverse conditions with respect to all the chosen variables.
 
@@ -107,17 +107,17 @@ Before creating the KNN model, a loop from range 1 to 10 was run where the accur
 
 #### Choosing the right *K*
 
-![K-Nearest Neighbor best K](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/K-Nearest%20Neighbor%20(KNN)%20best%20K%20Value.jpeg)
+![K-Nearest Neighbor best K](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/K-Nearest%20Neighbor%20(KNN)%20best%20K%20Value.jpeg)
 
 #### KNN Classification Metrics Report
 
-![K-Nearest Neighbor](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/KNN%20Classification%20Metrics%20Report.JPG)
+![K-Nearest Neighbor](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/KNN%20Classification%20Metrics%20Report.JPG)
 
 ### Decision Tree
 
 #### Decision Tree Classification Metrics Report
 
-![Decision Tree](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Decision%20Tree%20Classification%20Metrics%20Report.JPG)
+![Decision Tree](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/Decision%20Tree%20Classification%20Metrics%20Report.JPG)
 
 ### Logistic Regression
 
@@ -125,7 +125,7 @@ The Logistic Regression model tends to falter with larger datasets containing a 
 
 #### Logistic Regression Classification Metrics Report
 
-![Logistic Regression](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Logistic%20Regression%20Classification%20Metrics%20Report.JPG)
+![Logistic Regression](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/Logistic%20Regression%20Classification%20Metrics%20Report.JPG)
 
 It was noticed that the logistic regression model produced a higher-than-desired *uncertainty* which is illustrated by its *log loss*.
 
@@ -139,13 +139,13 @@ The results of all three machine learning models that were used varied significa
 
 #### Comparison of Accuracy Metrics across the Models
 
-<img align="center" width="950" height="340" src = "https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Comparison%20of%20Accuracy%20Metrics.PNG">
+<img align="center" width="950" height="340" src = "https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/Comparison%20of%20Accuracy%20Metrics.PNG">
 
 In order to understand what the report above means, it is necessary to take a look at what precision and recall signify.
 
 #### Precision VS Recall
 
-<img align="center" width="600" height="900" src="https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Precision%20VS%20Recall.png">
+<img align="center" width="600" height="900" src="https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/Precision%20VS%20Recall.png">
 
 - **Precision:** How many selected elements are relevant?
 - **Recall:** How many relevant elements are selected?
@@ -167,7 +167,7 @@ It is evident by the models' accuracy ratings that there is still room for impro
 
 #### The I-5 highway and Central Seattle: The *Danger Zones*?
 
-![Folium I-5](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/I-5%20Highway%20Seattle.JPG)
+![Folium I-5](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/I-5%20Highway%20Seattle.JPG)
 
 #### For Travelers & their Families
 
@@ -177,7 +177,7 @@ It is evident by the models' accuracy ratings that there is still room for impro
 
 #### Blocks & Intersections account for ~100% of Car Accidents in Seattle: is better traffic control needed?
 
-![BlockVSAlleyVSIntersection](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Area%20of%20Accident%20(Block%2BIntersection%2BAlley).jpeg)
+![BlockVSAlleyVSIntersection](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Images/Area%20of%20Accident%20(Block%2BIntersection%2BAlley).jpeg)
 
 #### For the Government
 
