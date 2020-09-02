@@ -191,7 +191,7 @@ It is evident by the models' accuracy ratings that there is still room for impro
 - Check to see whether the client that is being insured travels on the I-5 highway regularly. Also check how frequently they travel to/within Central Seattle.
 - Check the weather, lighting and road conditions of where the client frequently travels to and where they live.
 
-## Contact Me
+### Contact Me
 
 - **LinkedIn Profile:** https://www.linkedin.com/in/shaffannaeem/
 - **Email Address:** shaffannaeem.123@gmail.com
