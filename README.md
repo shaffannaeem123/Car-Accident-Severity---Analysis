@@ -51,23 +51,23 @@ The dataset used for this project is a public dataset and illustrates the circum
 
 After gaining an understanding of the problem, the data had to be transformed to a form on which a machine learning model could be implemented. The first thing that was done was to check the data types of each variable and then explore how many variables were missing some entries.
 
-The data types in the Seattle dataset mostly comprised *categorical variables* and *objects*; it was concluded that a Simple/Multiple/Polynomial Regression would not work here. The variables in the dataset were listed in plain english and most of them were to be encoded with integers in an *ordinal* manner. 
+The data types in the Seattle dataset mostly comprised *categorical variables* and *objects*; it was concluded that a Simple/Multiple/Polynomial Regression would not work here. The variables in the dataset were listed in plain English and most of them were to be encoded with integers in an *ordinal* manner. 
 
 #### Data-types in the Dataset
 
 ![Data Types](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Data%20Types.JPG)
 
-The frequency of datapoints that contained entries that could be readily understood, for example, *Y* for *Yes*, *N* for *No*, or *0* for *False* and *1* for *True*, was higher for some variables than the others. 
+The frequency of data points that contained entries that could be readily understood, for example, *Y* for *Yes*, *N* for *No*, or *0* for *False* and *1* for *True*, was higher for some variables than the others. 
 
-#### Frequncies in Dataset Columns before the Data was Transformed
+#### Frequencies in Dataset Columns before the Data was Transformed
 
 ![Data Exploration](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Variable%20Frequency.jpeg)
 
 After these analyses, it was concluded that some of the data will be dropped based on *materiality (will the dropped values significantly affect the analysis?)*, and the other will be encoded with integers. The *unknown* valuables were to be distributed back to the dataset in the same proportion the rest of the data was distributed, minus the *unknown* values.
 
-Subsequently, unavailable and unknown datapoints were re-disrubuted within the dataset in the same proprtions as the known values in order to minimize the loss of data. Data that could not be salvaged was dropped, and the variables were encoded in integer forms; for example 0, 1, 2, and one unique identifier was retained for the dataset.
+Subsequently, unavailable and unknown data points were re-distributed within the dataset in the same proportions as the known values in order to minimize the loss of data. Data that could not be salvaged was dropped, and the variables were encoded in integer forms; for example 0, 1, 2, and one unique identifier was retained for the dataset.
 
-A new dataset by the name of "feature_df" was formulated after all the changes were made andd relevant predictor variables were chosen through which a machine learning model would be created.
+A new dataset by the name of "feature_df" was formulated after all the changes were made and relevant predictor variables were chosen through which a machine learning model would be created.
 
 Next, the data was split into a *training set* and a *testing set* in order to train our model and test the predictions it makes in order to get accuracy metrics.
 
@@ -77,7 +77,7 @@ Most importantly, the number of accidents that were *property damage only* and t
 
 ![Severity](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Severity%20of%20Accidents.jpeg)
 
-After recognizing that the dataset was clearly imbalanced, a Python library called *Imbalanced-Learn* was imported and *SMOTE* was used to *balance* the data to reduce the possibility of inaccurate predictions caused by having a significantly higher number of *Property Damage Only* datapoints within our *training set*. If this step was omitted, the model would have predicted a lot more *0s* or *Property Damage Onlys* than it should have.
+After recognizing that the dataset was clearly imbalanced, a Python library called *Imbalanced-Learn* was imported and *SMOTE* was used to *balance* the data to reduce the possibility of inaccurate predictions caused by having a significantly higher number of *Property Damage Only* data points within our *training set*. If this step was omitted, the model would have predicted a lot more *0s* or *Property Damage Onlys* than it should have.
 
 ### Exploratory Data Analysis & Inferential Statistics
 
@@ -95,11 +95,11 @@ Subsequent to gaining a complete understanding of the dataset, it was evident th
 
 Because SVM's training complexity is largely reliant on the size of the dataset and is not well suited to larger datasets, it was not used in this specific case.
 
-In the end, *Decision Tree, Logistic Regression, and KNN* models were shortlisted as the machine learning classification algroithms that were to be tested.
+In the end, *Decision Tree, Logistic Regression, and KNN* models were shortlisted as the machine learning classification algorithms that were to be tested.
 
 ## Results
 
-The results of each of the three models varied; one excelled at predicting the *positives* accurately while the other predicted the *negativves* better. It was evident by the results that the predictions could have been improved if there was a more complete dataset at hand.
+The results of each of the three models varied; one excelled at predicting the *positives* accurately while the other predicted the *negatives* better. It was evident by the results that the predictions could have been improved if there was a more complete dataset at hand.
 
 ### K-Nearest Neighbor
 
@@ -121,13 +121,13 @@ Before creating the KNN model, a loop was ran from range 1 to 10 where the accur
 
 ### Logistic Regression
 
-The Logistic Regression model tends to falter with larger datasets containing a high frequency of minority datapoints unless a more complex, penalty-oriented model is used. Surprisngly, it was also able to make fair predictions relative to the other two models.
+The Logistic Regression model tends to falter with larger datasets containing a high frequency of minority data points unless a more complex, penalty-oriented model is used. Surprisingly, it was also able to make fair predictions relative to the other two models.
 
 #### Logistic Regression Classification Metrics Report
 
 ![Logistic Regression](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/Logistic%20Regression%20Classification%20Metrics%20Report.JPG)
 
-It was noticed that the logistic regression model produced a higher-than-desried *uncertainty* which is illustrated by its *log loss*.
+It was noticed that the logistic regression model produced a higher-than-desired *uncertainty* which is illustrated by its *log loss*.
 
 #### Log Loss
 
@@ -135,7 +135,7 @@ The value of *log-loss* is **0.69** for this model.
 
 ## Discussion
 
-The results of all three machine learning models that were used varied significantly. One excelled at predicting the occurences of *0* while the other would predict *0* and *1* with ~50-50 accuracies.
+The results of all three machine learning models that were used varied significantly. One excelled at predicting the occurrences of *0* while the other would predict *0* and *1* with ~50-50 accuracies.
 
 #### Comparison of Accuracy Metrics across the Models
 
@@ -172,7 +172,7 @@ It is evident by the models' accuracy ratings that there is still room for impro
 #### For Travelers & their Families
 
 - Most accidents include adverse weather, road, and lighting conditions. The driver should make sure that they have a backup plan for tackling adverse weather conditions, e.g. a place to stay on their way if the weather forecast is not favorable. If possible, reschedule the day on which you travel. It is also advisable to travel during daytime in order to avoid accidents caused by hampered visibility.
-- Inattentive driving, over-speeding, and being under-the-influence are also contributors to the likelihood of an accident occuring and closely rival the above-mentioned factors. Make sure that the driver is well-rested, follows the speed-limit, and is not under-the-influence while traveling.
+- Inattentive driving, over-speeding, and being under-the-influence are also contributors to the likelihood of an accident occurring and closely rival the above-mentioned factors. Make sure that the driver is well-rested, follows the speed-limit, and is not under-the-influence while traveling.
 - Drive carefully in central Seattle and the I-5 highway as that is where the most accidents happen.
 
 #### Blocks & Intersections account for ~100% of Car Accidents in Seattle: is better traffic control needed?
