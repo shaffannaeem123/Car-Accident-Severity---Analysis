@@ -103,7 +103,7 @@ The results of each of the three models varied; one excelled at predicting the *
 
 ### K-Nearest Neighbor
 
-Before creating the KNN model, a loop was ran from range 1 to 10 where the accuracy of the model was checked with varying values of K, and *K = 4* was chosen as it produced the highest accuracy. The result can be seen below:
+Before creating the KNN model, a loop from range 1 to 10 was run where the accuracy of the model was checked with varying values of K, and *K = 4* was chosen as it produced the highest accuracy. The result can be seen below:
 
 #### Choosing the right *K*
 
@@ -165,7 +165,7 @@ It is evident by the models' accuracy ratings that there is still room for impro
 
 ## Recommendations
 
-#### The I-5 highway and Central Seattle: the *Danger Zones*?
+#### The I-5 highway and Central Seattle: The *Danger Zones*?
 
 ![Folium I-5](https://github.com/shaffannaeem123/Car-Accident-Severity---Analysis/blob/master/I-5%20Highway%20Seattle.JPG)
 
